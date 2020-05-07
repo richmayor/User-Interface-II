@@ -21,28 +21,59 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
-*{
-    box-sizing:border-box;
-}
-
-body{
-	line-height: 1.5;
-}
-
-section{
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 2px;
+    max-width: 100%; /*this is saying you can never be bigger than your parent*/
+    border: 1px solid grey;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    line-height: 2;
+    font-size: 1.5rem;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  
+  section {
     padding: 4% 0;
-
-}
-
-/* header section styles */
-
-
-/* about section styles */
-
-
-footer{
-    background-color:grey;
-    text-align:center;
+  }
+  
+  /* Navigation section styles */
+  
+  .navigation
+  
+  /* about section styles */
+  
+  footer {
+    background-color: grey;
+    text-align: center;
     width: 50%;
     height: 20%;
-}
+  }
+  
+  /* photos section */
+  
+  .Photos{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+  /*   justify-content:space-around; */
+  }
+  
+  
+  @media (max-width: 800px) {
+    .navigation {
+      font-size: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 500px) {
+  }
+  
